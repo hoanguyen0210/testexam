@@ -1,0 +1,42 @@
+<!--The 'step_code' value from the .js file should be used-->
+<li id="survey" data-bind="fadeVisible: isVisible">
+	<div class="step-title" data-bind="i18n: 'Vote'" data-role="title"></div>
+	<div id="checkout-step-survey"
+	     class="checkout-shipping-method"
+	     data-role="content">
+		<form data-bind="submit: navigateToNextStep" novalidate="novalidate" class="form methods-shipping">
+			<div class="field">
+				<div class="control">
+					<div class="field">
+					<label class="label" for="customer_hobbies"><span data-bind="i18n: 'Customer Hobbies">Customer Hobbies</span></label>
+						<select id="customer_hobbies" name="hobbies">
+							<option value="Soccer">Soccer</option>
+							<option value="Dancing">Dancing</option>
+							<option value="Golf">Golf</option>
+							<option value="Other">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="control">
+					<div class="field">
+						<label class="label" for="customer_income"><span data-bind="i18n: 'Customer Income">Customer Income</span></label>
+						<select id="customer_income" name="income">
+							<option value="Less than 100$ per Week">Less than 100$ per Week</option>
+							<option value="100 - 400$ per Week">100 - 400$ per Week</option>
+							<option value="400 - 1000$ per Week">400 - 1000$ per Week</option>
+							<option value="Over 1000$ per Week">Over 1000$ per Week</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="actions-toolbar" id="shipping-method-buttons-container">
+				<div class="primary">
+					<button data-role="opc-continue" type="submit" class="button action continue primary">
+						<span>Next</span>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</li>

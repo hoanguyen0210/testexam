@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="customer" translate="label" sortOrder="300">
+            <label>Customers</label>
+        </tab>
+        <section id="customer">
+            <tab>customer</tab>
+            <resource>Magento_Customer::config_customer</resource>
+            <group id="email" translate="label" type="text" sortOrder="100" showInDefault="1">
+                <label>Customer Email</label>
+                <field id="address" translate="label comment" type="text" sortOrder="1" showInDefault="1">
+                    <label>Email Address</label>
+                    <comment>Will send email to this address.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

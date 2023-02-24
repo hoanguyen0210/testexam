@@ -1,0 +1,27 @@
+<?php
+/**
+ * @var $block \SmartOSC\Checkout\Block\Adminhtml\Order\Tab\View
+ */
+?>
+
+<div class="fieldset-wrapper order-information">
+    <div class="fieldset-wrapper-title">
+        <span class="title"><?php /* @escapeNotVerified */
+            echo __('Customer Survey') ?></span>
+    </div>
+    <table class="admin__table-secondary">
+        <tbody>
+        <?php echo $block->getChildHtml(); ?>
+        <tr>
+            <th><?php /* @escapeNotVerified */
+                echo __('Hobbies:') ?></th>
+            <td><?php echo $block->getHobbies(); ?></td>
+        </tr>
+        <tr>
+            <th><?php /* @escapeNotVerified */
+                echo __('Income:') ?></th>
+	        <td><?php echo $block->getIncome(); ?></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
